@@ -1,0 +1,203 @@
+/* importing fonts*/ 
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto+Mono:wght@300&family=Sen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+/* universal*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+  
+}
+/* heading */
+.main{
+  font-family: 'Press Start 2P', cursive;
+  text-align: center;
+  margin: 3rem 0;
+  font-size: 15px;
+  color :  #331D2C;
+  
+}
+
+
+/* time */
+.time{
+  font-family: 'Sen', sans-serif;
+  
+  padding: 5px;
+  font-size: 30px;
+
+  
+}
+/* flexbox */
+.d-flex{
+  display: flex;
+}
+/* button */
+
+.top{
+  background-color: #f14040;
+  border-radius: 100px;
+  box-shadow: rgba(242, 40, 9, 0.2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: font-family: 'Sen', sans-serif;;
+  padding: 5px 30px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.top:hover {
+  box-shadow: rgba(221, 71, 71, 0.719) 0 -25px 18px -14px inset,rgba(234, 125, 57, 0.853) 0 1px 2px,rgba(239, 102, 78, 0.837) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+
+
+/* select */
+ select{
+  font-family: 'Sen', sans-serif;
+  padding: 20px;
+  cursor: pointer;
+   appearance: none;
+  outline: black;
+  background-color: #DCE2F0;
+  padding: 30px;
+  font-weight: bold;
+  border: none;
+  border-radius: 2rem;
+  margin-right: 1rem;
+  cursor: pointer;
+  color: #0E141B;
+  border-color: black; 
+} 
+
+body{
+  min-height: 100vh;
+  /*background-color: black;*/
+
+  background-image: radial-gradient( circle 369px at -2.9% 12.9%,  rgba(247,234,163,1) 0%, rgba(236,180,238,0.56) 46.4%, rgba(163,203,247,1) 100.7% );
+}
+/* main container */
+.main-container{
+  font-family: 'Sen', sans-serif;
+  display: flex;
+  justify-content: center;
+}
+/* clock container */
+
+images 
+.img{
+  max-width: 10px;
+  
+}
+
+.container #clockImg{
+
+  max-width: 105px;
+  
+}
+
+.container h1{
+  font-size: 38px;
+  font-weight:bolder;
+  margin: 30px 0;
+  color: aliceblue;
+}
+
+/*activate clock image class*/
+
+
+
+/* current time */
+.current-time{
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-size: 90px;
+  text-align: center;
+  color: #070707;
+  
+}
+/* alarm form */
+.alarm-form div{
+  margin-right: 1rem;
+}
+/* sumbmit button */
+.submit-button{
+  font-family: 'Sen', sans-serif;
+  transition: all .5s ease;
+  color: #fff;
+  border: 3px solid white;
+  font-family:'Montserrat', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+  font-size: 17px;
+  background-color : transparent;
+  padding: 15px;
+  outline: none;
+  border-radius: 40px;
+}
+.submit-button:hover{
+  background-color:  #80669d;
+  
+  
+}
+/*.submit-button css ends*/
+.set-alarm-container{
+  margin-top: 1rem;
+  text-align: center;
+  align-items: center;
+
+}
+.set-alarm-container-title{
+  margin-bottom: 1rem;
+  align-items: center;
+  
+}
+
+.alarm-container .alarm-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding:0.5rem 1rem;
+  margin-bottom: 0.5rem;
+  background-color: #f1f1f1;
+  border-radius: 60px;
+}
+.alarms-container .alarm-item .alarm-time{
+  font-weight: bold;
+  align-items: center;
+
+}
+.alarms-container .alarm-item .delete-button{
+  color: #ff0000;
+  font-weight: bold;
+  cursor: pointer;
+}
+/* style of devices of screen size less than 768px */
+@media only screen and (min-width: 600px) {
+  /* adding padding to container */
+  .main-container {
+    padding-block: 5px;
+  }
+  .clock-container{
+      justify-content: center;
+      border-radius: 50px;
+      position: fixed;
+    
+  }
+}
+
+
+
+
+

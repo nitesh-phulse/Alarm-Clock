@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--  Favicon    -->
+        <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon" />
+    <!-- styleSheet -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>ALARM CLOCK</title>
+</head>
+<!-- heading -->
+
+<div class="main">
+    <h1>ALARM CLOCK</h1>
+</div>
+<!-- main container -->
+<div class="main-container d-flex">
+    <!-- clock container -->
+    <div class="clock-container d-flex">
+        <!-- clock image -->
+       <!-- <img src="folder/clock.png" alt="" -->
+        <div class="container">  
+            <span class="clockanimation">
+                <img src="folder/clock.png"  id="clockImg" alt="clock">
+            </span>
+        <!-- current-time -->
+        <div class="current-time mb" id="current-time">_:_:_</div>
+        <form class="alarm-form d-flex mb">
+            <div>
+
+                <select name="hours" id="hours" required></select>
+
+                <select required name="minutes" id="minutes"></select>
+                <select required name="seconds" id="seconds"></select>
+                <select required name="am-pm" id="am-pm">
+                    <option value="AM">AM</option>
+                    <option value="PM">PM</option>
+                </select>
+            </div>
+            <!-- button -->
+            <button class="btn submit-button" id="submitButton" type="submit">Set Alarm</button>
+        </form>
+        <!-- alarm container -->
+        <div class="set-alarm-container">
+            <div class="set-alarm-container-title mb">Alarms</div>
+            <div class="alarms-container"id="alarms-container"></div>
+        </div>
+    </div>
+</div>
+<!-- javaScript file -->
+<script type="text/javascript" src="Script.js"></script>
+<body>
+    
+</body>
+</html>
